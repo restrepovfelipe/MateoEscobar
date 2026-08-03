@@ -297,6 +297,12 @@ section{ position:relative; }
 .proj-card p{ margin-top:10px; color:var(--tinta-soft); }
 .proj-date{ font-family:var(--font-mono); font-size:11.5px; color:var(--tinta-soft); margin-top:14px; text-transform:uppercase; letter-spacing:.05em; }
 
+.doc-section-label{ font-family:var(--font-mono); font-size:11px; letter-spacing:.09em; text-transform:uppercase; color:var(--verde-700); font-weight:700; margin-top:22px; display:block; }
+.doc-list{ margin-top:8px; display:flex; flex-direction:column; gap:6px; }
+.doc-list li{ padding-left:18px; position:relative; color:var(--tinta-soft); }
+.doc-list li::before{ content:'—'; position:absolute; left:0; top:0; color:var(--oro-dark); }
+.doc-quote{ font-style:italic; color:var(--tinta-soft); margin-top:10px; border-left:3px solid var(--linea); padding-left:14px; }
+
 /* news */
 .news-card{ border:2px solid var(--tinta); background:var(--blanco); border-radius:4px; overflow:hidden; display:flex; flex-direction:column; }
 .news-thumb{ position:relative; aspect-ratio:16/9; overflow:hidden; background:var(--tinta); }
