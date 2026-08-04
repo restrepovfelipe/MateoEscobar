@@ -241,6 +241,19 @@ section{ position:relative; }
 .pillar h3{ font-size:1.5rem; margin-top:14px; color:var(--verde-900); font-family:var(--font-body); font-weight:800; }
 .pillar p{ margin-top:10px; font-size:.92rem; color:var(--tinta-soft); }
 .pillar svg{ width:34px; height:34px; margin-bottom:6px; stroke:var(--verde-700); }
+.pillar{ border-top:4px solid var(--verde-700); }
+.pillar.c-azul{ border-top-color:var(--azul-marca); }
+.pillar.c-azul svg{ stroke:var(--azul-marca); }
+.pillar.c-azul .num{ color:var(--azul-marca); }
+.pillar.c-naranja{ border-top-color:var(--naranja-marca); }
+.pillar.c-naranja svg{ stroke:var(--naranja-marca); }
+.pillar.c-naranja .num{ color:var(--naranja-marca); }
+.pillar.c-verde{ border-top-color:var(--verde-marca); }
+.pillar.c-verde svg{ stroke:#7C9A3E; }
+.pillar.c-verde .num{ color:#7C9A3E; }
+.pillar.c-rojo{ border-top-color:var(--rojo-marca); }
+.pillar.c-rojo svg{ stroke:var(--rojo-marca); }
+.pillar.c-rojo .num{ color:var(--rojo-marca); }
 @media (max-width:900px){ .pillars{ grid-template-columns:repeat(2, minmax(0,1fr)); } }
 @media (max-width:560px){ .pillars{ grid-template-columns:minmax(0,1fr); } }
 
@@ -298,6 +311,9 @@ section{ position:relative; }
   content:''; position:absolute; left:-42px; top:4px; width:14px; height:14px; border-radius:50%;
   background:var(--oro); border:2px solid var(--tinta);
 }
+.tl-item.d-azul::before{ background:var(--azul-marca); }
+.tl-item.d-verde::before{ background:var(--verde-marca); }
+.tl-item.d-rojo::before{ background:var(--rojo-marca); }
 .tl-item .yr{ font-family:var(--font-mono); font-size:12px; font-weight:700; letter-spacing:.08em; color:var(--verde-700); text-transform:uppercase; }
 .tl-item h3{ font-family:var(--font-body); font-weight:800; font-size:1.3rem; margin-top:6px; color:var(--verde-900); }
 .tl-item .org{ font-family:var(--font-mono); font-size:12px; color:var(--tinta-soft); margin-top:2px; }
@@ -317,6 +333,9 @@ section{ position:relative; }
 .proj-id{ font-family:var(--font-mono); font-weight:700; font-size:13px; color:var(--verde-700); }
 .badge{ font-family:var(--font-mono); font-size:10.5px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; padding:5px 11px; border-radius:99px; }
 .badge-tag{ background:var(--verde-100); color:var(--verde-800); }
+.badge-azul{ background:#E4EDF3; color:var(--azul-marca-dark); }
+.badge-rojo{ background:#F5E4E4; color:var(--rojo-marca-dark); }
+.badge-naranja{ background:#FBE8DB; color:#A2521E; }
 .proj-card h3{ font-family:var(--font-body); font-weight:800; font-size:1.22rem; margin-top:14px; color:var(--tinta); }
 .proj-card p{ margin-top:10px; color:var(--tinta-soft); }
 .proj-date{ font-family:var(--font-mono); font-size:11.5px; color:var(--tinta-soft); margin-top:14px; text-transform:uppercase; letter-spacing:.05em; }
