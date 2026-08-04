@@ -6,14 +6,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
 
 :root{
-  --verde-950:#04170F;
-  --verde-900:#062E1C;
-  --verde-800:#0A4B2C;
-  --verde-700:#0E6B3C;
-  --verde-600:#158A4C;
-  --verde-500:#22A85D;
-  --verde-100:#E7F3EA;
-  --verde-050:#F3F8F1;
+  /* escala oscura "negro M" — antes verde bosque, ahora neutra como el logo */
+  --verde-950:#0F0D0B;
+  --verde-900:#1A1815;
+  --verde-800:#6B2547;
+  --verde-700:#7A2C50;
+  --verde-600:#2A2723;
+  --verde-500:#6B6558;
+  --verde-100:#EDEAE2;
+  --verde-050:#F5F3EE;
 
   --crema:#F7F2E4;
   --crema-alt:#EFE7D2;
@@ -38,7 +39,7 @@
 
   --blanco:#FFFFFF;
   --linea: rgba(16,25,19,0.14);
-  --sombra: 0 24px 48px -20px rgba(6,25,15,0.45);
+  --sombra: 0 24px 48px -20px rgba(10,9,7,0.45);
 
   --font-display:'Anton', 'Arial Narrow', sans-serif;
   --font-body:'Archivo', sans-serif;
@@ -172,8 +173,8 @@ button{ font-family:inherit; cursor:pointer; }
 }
 .hero-bg::after{
   content:''; position:absolute; inset:0;
-  background:linear-gradient(100deg, rgba(4,23,15,.97) 20%, rgba(4,23,15,.72) 48%, rgba(4,23,15,.35) 78%),
-             linear-gradient(0deg, rgba(4,23,15,.9), transparent 40%);
+  background:linear-gradient(100deg, rgba(15,13,11,.97) 20%, rgba(15,13,11,.72) 48%, rgba(15,13,11,.35) 78%),
+             linear-gradient(0deg, rgba(15,13,11,.9), transparent 40%);
 }
 .hero-inner{ position:relative; z-index:2; padding:96px 28px 120px; max-width:var(--wrap); margin:0 auto; }
 .hero-tag{
@@ -204,7 +205,7 @@ button{ font-family:inherit; cursor:pointer; }
 .page-head::before{
   content:''; position:absolute; inset:0; opacity:.28; background-size:cover; background-position:center;
 }
-.page-head::after{ content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(4,23,15,.55), rgba(4,23,15,.96)); }
+.page-head::after{ content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(15,13,11,.55), rgba(15,13,11,.96)); }
 .page-head h1{ font-size:clamp(2.6rem,6vw,4.4rem); margin-top:16px; }
 .page-head p.lede{ max-width:600px; margin-top:18px; font-size:1.08rem; color:rgba(255,255,255,.82); }
 .crumb{ font-family:var(--font-mono); font-size:12px; letter-spacing:.08em; color:rgba(255,255,255,.6); text-transform:uppercase; }
